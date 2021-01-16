@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "62819436-3fcb-4cbc-a932-c08083a6d3b2",
+		"name": "Member",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "get product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYxMDY4NjIxNywiZXhwIjoxNjEwNjg5ODE3LCJuYmYiOjE2MTA2ODYyMTcsImp0aSI6ImVTZjNVemwwc3lGcWpPRHkiLCJzdWIiOjMzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.KGIm9dTJ7KsaQn2dT55uLFInJ78dG_7Em8rZaeQjFx4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/user/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "my history transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYxMDY4NjIxNywiZXhwIjoxNjEwNjg5ODE3LCJuYmYiOjE2MTA2ODYyMTcsImp0aSI6ImVTZjNVemwwc3lGcWpPRHkiLCJzdWIiOjMzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.KGIm9dTJ7KsaQn2dT55uLFInJ78dG_7Em8rZaeQjFx4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/user/transactions/my_history_transaction",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"transactions",
+								"my_history_transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYxMDY4NjIxNywiZXhwIjoxNjEwNjg5ODE3LCJuYmYiOjE2MTA2ODYyMTcsImp0aSI6ImVTZjNVemwwc3lGcWpPRHkiLCJzdWIiOjMzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.KGIm9dTJ7KsaQn2dT55uLFInJ78dG_7Em8rZaeQjFx4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "items[0][product_id]",
+									"value": "28",
+									"type": "text"
+								},
+								{
+									"key": "items[0][qty]",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "items[1][product_id]",
+									"value": "29",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "items[1][qty]",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/user/transactions",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "update me as user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYxMDY4NjIxNywiZXhwIjoxNjEwNjg5ODE3LCJuYmYiOjE2MTA2ODYyMTcsImp0aSI6ImVTZjNVemwwc3lGcWpPRHkiLCJzdWIiOjMzLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.KGIm9dTJ7KsaQn2dT55uLFInJ78dG_7Em8rZaeQjFx4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ricky cool",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "patch",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/user/users/update_me_as_user",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"users",
+								"update_me_as_user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
